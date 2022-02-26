@@ -14,7 +14,7 @@ from datetime import datetime
 
 Base=declarative_base()
 
-engine = create_engine('postgresql://u0fuu3mgs6j1oi1mws13:NZFOezwFRN8CDr8YUnmI@biglgukmkcppeicyhxtn-postgresql.services.clever-cloud.com:5432/biglgukmkcppeicyhxtn')
+engine = create_engine(config('POSTGRESQL_URI')
 
 class Registros(Base):
     __tablename__ = 'Registros'
